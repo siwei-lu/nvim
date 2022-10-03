@@ -18,7 +18,6 @@ local function border(hl_name)
     { "─", hl_name },
     { "╰", hl_name },
     { "│", hl_name },
-    { ""}
   }
 end
 
@@ -64,12 +63,12 @@ local options = {
       select = true,
     },
     ["<Tab>"] = cmp.mapping(function(fallback)
-       if cmp.visible() then
-         cmp.confirm({ select = true})
-        else
-          fallback()
-        end
-end, { "i", "s" }),
+      if cmp.visible() then
+        cmp.confirm({ select = true })
+      else
+        fallback()
+      end
+    end, { "i", "s" }),
   },
   sources = {
     { name = "luasnip" },
