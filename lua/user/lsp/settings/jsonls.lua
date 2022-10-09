@@ -14,6 +14,14 @@ local schemas = {
     url = "https://json.schemastore.org/tsconfig.json",
   },
   {
+    description = "TypeScript compiler configuration file",
+    fileMatch = {
+      "jsconfig.json",
+      "jsconfig.*.json",
+    },
+    url = "https://json.schemastore.org/jsconfig.json",
+  },
+  {
     description = "Lerna config",
     fileMatch = { "lerna.json" },
     url = "https://json.schemastore.org/lerna.json",

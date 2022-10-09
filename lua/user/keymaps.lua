@@ -36,6 +36,7 @@ keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 keymap("n", "<C-s>", "<cmd>lua vim.lsp.buf.format{async=false}<CR>:w<CR>", opts)
 keymap("n", "<C-x>", "<cmd>lua vim.lsp.buf.format{async=false}<CR><cmd>Bdelete!<CR><CR>", opts)
 keymap("n", "<C-q>", ":q!<CR>", opts)
+keymap("n", "U", "<C-r>", opts)
 
 -- Insert --
 -- Press jk fast to exit insert mode
