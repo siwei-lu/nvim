@@ -3,10 +3,10 @@ if not status_ok then
   return
 end
 
+local actions = require("diffview.actions")
+
 local opts = { noremap = true, silent = true }
-
 local keymap = vim.api.nvim_set_keymap
-
 keymap("n", "<C-g>", "<cmd>DiffviewOpen<CR>", opts)
 
 diffview.setup {
