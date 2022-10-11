@@ -44,7 +44,6 @@ keymap("n", "U", "<C-r>", opts)
 keymap("i", "<C-s>", "<ESC><cmd>lua vim.lsp.buf.format{async=false}<CR>:w<CR>", opts)
 keymap("i", "<C-x>", "<ESC><cmd>lua vim.lsp.buf.format{async=false}<CR><cmd>Bdelete!<CR><CR>", opts)
 keymap("i", "<C-q>", "<ESC>:q!<CR>", opts)
-keymap("i", "<C-w>", "<ESC>:w<CR>", opts)
 
 -- Visual --
 -- Stay in indent mode
