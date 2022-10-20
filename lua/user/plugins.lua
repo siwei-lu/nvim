@@ -86,6 +86,7 @@ return packer.startup(function(use)
 
 	-- Treesitter
 	use({ "nvim-treesitter/nvim-treesitter" })
+	use("nkrkv/nvim-treesitter-rescript")
 
 	-- Git
 	use({ "lewis6991/gitsigns.nvim" })
