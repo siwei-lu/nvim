@@ -153,12 +153,6 @@ local mappings = {
 			"Workspace Symbols",
 		},
 	},
-	x = {
-		name = "Trouble",
-		x = { "<cmd>TroubleToggle<cr>", "Toggle Trouble" },
-		w = { "<cmd>TroubleToggle workspace_diagnostics<cr>", "" },
-		d = { "<cmd>TroubleToggle document_diagnostics<cr>" },
-	},
 	s = {
 		name = "Search",
 		b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
