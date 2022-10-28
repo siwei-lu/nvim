@@ -57,7 +57,7 @@ return packer.startup(function(use)
 	use({ "lewis6991/impatient.nvim" })
 	use({ "lukas-reineke/indent-blankline.nvim" })
 	use({ "goolord/alpha-nvim" })
-	use("folke/which-key.nvim")
+	use({ "folke/which-key.nvim" })
 	use({ "folke/trouble.nvim", requires = "kyazdani42/nvim-web-devicons" })
 
 	-- Colorschemes
@@ -76,7 +76,6 @@ return packer.startup(function(use)
 	use({ "rafamadriz/friendly-snippets" }) -- a bunch of snippets to use
 
 	-- LSP
-	use({ "williamboman/nvim-lsp-installer" }) -- simple to use language server installer
 	use({ "jose-elias-alvarez/null-ls.nvim" }) -- for formatters and linters
 	use({
 		"williamboman/mason.nvim",
@@ -89,7 +88,7 @@ return packer.startup(function(use)
 
 	-- Treesitter
 	use({ "nvim-treesitter/nvim-treesitter" })
-	use("nkrkv/nvim-treesitter-rescript")
+	use({ "nkrkv/nvim-treesitter-rescript" })
 
 	-- Git
 	use({ "lewis6991/gitsigns.nvim" })
