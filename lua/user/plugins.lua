@@ -58,10 +58,10 @@ return packer.startup(function(use)
 	use({ "lukas-reineke/indent-blankline.nvim" })
 	use({ "goolord/alpha-nvim" })
 	use("folke/which-key.nvim")
+	use({ "folke/trouble.nvim", requires = "kyazdani42/nvim-web-devicons" })
 
 	-- Colorschemes
-	use("lunarvim/darkplus.nvim")
-	use("B4mbus/oxocarbon-lua.nvim")
+	use("Mofiqul/dracula.nvim")
 
 	-- cmp plugins
 	use({ "hrsh7th/nvim-cmp" }) -- The completion plugin
