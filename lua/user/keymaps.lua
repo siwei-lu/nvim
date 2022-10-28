@@ -34,16 +34,16 @@ keymap("n", "<C-v>", ":vsplit<CR>", opts)
 keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
-keymap("n", "<C-s>", "<cmd>lua vim.lsp.buf.format{async=false}<CR>:w<CR>", opts)
-keymap("n", "<C-x>", "<cmd>lua vim.lsp.buf.format{async=false}<CR><cmd>Bdelete!<CR><CR>", opts)
-keymap("n", "<C-q>", ":q!<CR>", opts)
+keymap("n", "<C-s>", "<cmd>lua vim.lsp.buf.format{async=false}<cr><cmd>w!<cr>", opts)
+keymap("n", "<C-x>", "<cmd>lua vim.lsp.buf.format{async=false}<cr><cmd>Bdelete!<CR><CR>", opts)
+keymap("n", "<C-q>", "<cmd>q!<cr>", opts)
 keymap("n", "U", "<C-r>", opts)
 
 -- Insert --
 -- Press jk fast to exit insert mode
-keymap("i", "<C-s>", "<ESC><cmd>lua vim.lsp.buf.format{async=false}<CR>:w<CR>", opts)
+keymap("i", "<C-s>", "<ESC><cmd>lua vim.lsp.buf.format{async=false}<cr><cmd>w!<cr>", opts)
 keymap("i", "<C-x>", "<ESC><cmd>lua vim.lsp.buf.format{async=false}<CR><cmd>Bdelete!<CR><CR>", opts)
-keymap("i", "<C-q>", "<ESC>:q!<CR>", opts)
+keymap("i", "<C-q>", "<ESC><cmd>q!<cr>", opts)
 
 -- Visual --
 -- Stay in indent mode

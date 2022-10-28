@@ -61,7 +61,7 @@ return packer.startup(function(use)
 	use({ "folke/trouble.nvim", requires = "kyazdani42/nvim-web-devicons" })
 
 	-- Colorschemes
-	use("Mofiqul/dracula.nvim")
+	use("projekt0n/github-nvim-theme")
 
 	-- cmp plugins
 	use({ "hrsh7th/nvim-cmp" }) -- The completion plugin
