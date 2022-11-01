@@ -8,11 +8,17 @@ if not status_lspconfig then
 	return
 end
 
+local handlers = require("user.lsp.handlers")
+
 mason.setup()
 lspconfig.setup()
 lspconfig.setup_handlers({
 	function(server_name)
-		local opts = {}
+		local opts = {
+			on_attach = function(client, bufnr)
+				handlers.on_attach(client, bufnr)
+			end,
+		}
 
 		local has_custom_opts, server_custom_opts = pcall(require, "user.lsp.settings." .. server_name)
 		if has_custom_opts then
@@ -23,5 +29,5 @@ lspconfig.setup_handlers({
 	end,
 })
 
-require("user.lsp.handlers").setup()
+handlers.setup()
 require("user.lsp.null-ls")
